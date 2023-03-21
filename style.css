@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utility Cart */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.columndisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: rgb(224, 224, 224);
+    padding: 2rem;
+}
+/* --------------------------------add in hyperlink edit-------------------- */
+a:link
+
+body {
+    font-family: 'Roboto', sans-serif;;
+}
+
+/* Header */
+header {
+    background-color: #9fc5f8;
+    color: white;
+    width: 100%;
+    padding: 1.5rem 0;
+}
+
+/* Chosen city section */
+.city {
+    border-bottom: .25rem solid black;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.temperature {
+    cursor: pointer;
+}
+
+/* Weather outlook section */
+img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.redFont {
+    color: red;
+}
+
+.blueFont {
+    color: rgb(68, 127, 255);
+}
+
+/* Cookies Pop-Up */
+.cookies {
+    background-color: rgb(190, 190, 190);
+    padding: .8rem;
+    border: .25rem solid black;
+    position: fixed;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cookieMessage {
+    flex: 4
+}
+
+button {
+    background-color: #9fc5f8;
+    padding:.25rem .5rem;
+    box-shadow: 3px 3px black;
+    flex: 1;
+}
+
+button.selectCity {
+    cursor: pointer;
+    background-color: transparent;
+    border: 0 transparent;
+    box-shadow: 0 0 transparent;
+    font-size: 1rem;
+    color: white;
+}

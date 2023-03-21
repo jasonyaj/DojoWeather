@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Weather Forecast</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container flex">
+      <h1>DojoWeather</h1>
+      <div class="flex">
+        <a href="#" class="selectCity" onclick="alert('Loading weather report...')">Burbank</a>
+        <a href="#" class="selectCity" onclick="alert('Loading weather report...')">Chicago</a>
+        <a href="#" class="selectCity" onclick="alert('Loading weather report...')">Dallas</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <!--City and Temp measurement-->
+    <section class="city flex">
+      <h2>San Jose</h2>
+      <div class="flex">
+        <p>show temperature in</p>
+        <select name="temperature" class="temperature" onchange="changeTemp()">
+          <option value="celsius" >°C</option>
+          <option value="fahrenheit" >°F</option>
+        </select>
+      </div>
+    </section>
+    
+    <!--Weather display-->
+    <section class="weather flex">
+      <article class="columndisplay">
+        <h3>Today</h3>
+        <img src="./img/some_rain.png" alt="some clouds">
+        <p>some rain</p>
+        <div class="flex">
+          <h3 class="redFont"><span id="high1">24</span>°</h3>
+          <h3 class="blueFont"><span id="low1">18</span>°</h3>
+        </div>
+      </article>
+      <article class="columndisplay">
+        <h3>Tomorrow</h3>
+        <img src="./img/some_sun.png" alt="some clouds">
+        <p>some sun</p>
+        <div class="flex">
+          <h3 class="redFont"><span id="high2">27</span>°</h3>
+          <h3 class="blueFont"><span id="low2">19</span>°</h3>
+        </div>
+      </article>
+      <article class="columndisplay">
+        <h3>Friday</h3>
+        <img src="./img/some_clouds.png" alt="some clouds">
+        <p>some clouds</p>
+        <div class="flex">
+          <h3 class="redFont"><span id="high3">21</span>°</h3>
+          <h3 class="blueFont"><span id="low3">16</span>°</h3>
+        </div>
+      </article>
+      <article class="columndisplay">
+        <h3>Saturday</h3>
+        <img src="./img/some_sun.png" alt="some clouds">
+        <p>some sun</p>
+        <div class="flex">
+          <h3 class="redFont"><span id="high4">26</span>°</h3>
+          <h3 class="blueFont"><span id="low4">21</span>°</h3>
+        </div>
+      </article>
+    </section>
+    
+    <!--Cookie pop up-->
+    <section class="cookies flex container" id="cookies">
+      <img src="./img/cookie.png" alt="Eaten cookie" class="cookieImg">
+      <div class="cookieMessage">
+        <h3><strong>Stop! Cookie Time</strong></h3>
+        <p>
+          We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more</a>
+        </p>
+      </div>
+      <button onclick="closeCookie(cookies)">I Accept</button>
+
+    </section>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
