@@ -25,8 +25,18 @@
     background-color: rgb(224, 224, 224);
     padding: 2rem;
 }
+
+p {
+    font-weight: bold;
+}
+
 /* --------------------------------add in hyperlink edit-------------------- */
-a:link
+a.selectCity {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
 
 body {
     font-family: 'Roboto', sans-serif;;
@@ -36,8 +46,11 @@ body {
 header {
     background-color: #9fc5f8;
     color: white;
-    width: 100%;
     padding: 1.5rem 0;
+}
+
+ul {
+    list-style: none;
 }
 
 /* Chosen city section */
@@ -53,17 +66,18 @@ header {
 
 /* Weather outlook section */
 img {
-    height: 80px;
     width: 80px;
     border-radius: 50%;
 }
 
 .redFont {
     color: red;
+    font-size: larger;
 }
 
 .blueFont {
     color: rgb(68, 127, 255);
+    font-size: larger;
 }
 
 /* Cookies Pop-Up */
